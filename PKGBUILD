@@ -1,7 +1,7 @@
 #https://github.com/hzxjy1/maa-assistant-arknights-bin
 
 pkgname=maa-assistant-arknights-bin
-_pkgver=v4.19.1
+_pkgver=v4.19.2
 pkgver="$(echo ${_pkgver//-/} | sed -e 's/^v//')"
 pkgrel=1
 pkgdesc="An Arknights assistant"
@@ -9,9 +9,9 @@ arch=(x86_64)
 url="https://github.com/MaaAssistantArknights/MaaAssistantArknights"
 license=('AGPL')
 depends=(opencv onnxruntime-bin onnxruntime cpr)
-makedepends=(asio eigen git cmake)
+conflicts=('maa-assistant-arknights')
 source=("$url/releases/download/${_pkgver}/MAA-${_pkgver}-linux-x86_64.tar.gz")
-md5sums=('e79a8838b7613464098626eebb78050d')
+md5sums=('9499f65a98f5612ea9644053eb71215c')
 
 package() {
     cd "${srcdir}"
