@@ -8,7 +8,6 @@ pkgdesc="An Arknights assistant"
 arch=(x86_64)
 url="https://github.com/MaaAssistantArknights/MaaAssistantArknights"
 license=('AGPL')
-depends=(opencv onnxruntime-bin onnxruntime cpr)
 conflicts=('maa-assistant-arknights')
 source=("$url/releases/download/${_pkgver}/MAA-${_pkgver}-linux-x86_64.tar.gz")
 md5sums=('9499f65a98f5612ea9644053eb71215c')
@@ -18,6 +17,7 @@ package() {
 
     install -Dm755 libMaaCore.so "${pkgdir}/usr/lib/libMaaCore.so"
     install -Dm755 libMaaDerpLearning.so "${pkgdir}/usr/lib/libMaaDerpLearning.so"
+    install -Dm755 libopencv_world4.so.407 "${pkgdir}/usr/lib/libopencv_world4.so.407"
 
     install -Dm644 AsstCaller.h "${pkgdir}/usr/include/AsstCaller.h"
     install -Dm644 AsstPort.h "${pkgdir}/usr/include/AsstPort.h"
