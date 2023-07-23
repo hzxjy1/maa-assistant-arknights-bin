@@ -1,7 +1,7 @@
 #https://github.com/hzxjy1/maa-assistant-arknights-bin
 
 pkgname=maa-assistant-arknights-bin
-_pkgver=v4.19.2
+_pkgver=v4.20.0
 pkgver="$(echo ${_pkgver//-/} | sed -e 's/^v//')"
 pkgrel=1
 pkgdesc="An Arknights assistant"
@@ -10,7 +10,7 @@ url="https://github.com/MaaAssistantArknights/MaaAssistantArknights"
 license=('AGPL')
 conflicts=('maa-assistant-arknights')
 source=("$url/releases/download/${_pkgver}/MAA-${_pkgver}-linux-x86_64.tar.gz")
-md5sums=('9499f65a98f5612ea9644053eb71215c')
+md5sums=('1ea1013f5561bf20b33cc67199233f5a')
 
 package() {
     cd "${srcdir}"
