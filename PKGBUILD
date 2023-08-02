@@ -18,6 +18,7 @@ package() {
     install -Dm755 libMaaCore.so "${pkgdir}/usr/lib/libMaaCore.so"
     install -Dm755 libMaaDerpLearning.so "${pkgdir}/usr/lib/libMaaDerpLearning.so"
     install -Dm755 libopencv_world4.so.407 "${pkgdir}/usr/lib/libopencv_world4.so.407"
+    install -Dm755 libonnxruntime.so.1.14.1 "${pkgdir}/usr/lib/libonnxruntime.so.1.14.1"
 
     install -Dm644 AsstCaller.h "${pkgdir}/usr/include/AsstCaller.h"
     install -Dm644 AsstPort.h "${pkgdir}/usr/include/AsstPort.h"
